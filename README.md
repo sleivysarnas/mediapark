@@ -10,32 +10,7 @@ If several days in succession have exact same time, those days should be grouped
 together (Monday-Wednesday in the example below).
 If shop is closed then instead of time show “Closed” (Friday in the example below).
 
-For example:
-     I-III 	 	      IV	 	     V	 	   VI-VII
-09:00 - 21:00 10:00 - 21:00 Closed 09:00 - 21:00
-
-struct Shop {
-
- let name: String
- let adress: String
- let workSchedule: WorkSchedule
-
- struct WorkSchedule {
- let monday: WorkHours?
- let tuesday: WorkHours?
- let wednesday: WorkHours?
- let thursday: WorkHours?
- let friday: WorkHours?
- let saturay: WorkHours?
- let sunday: WorkHours?
- }
-
- struct WorkHours {
- let from: String
- let to: String
- }
-
-}
+Example is shown in example.jpg
 
 2. Write a function to find the longest common prefix from string array (function should
 take string as parameter and return a string). For example, input could be [“market”,
