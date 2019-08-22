@@ -1,9 +1,6 @@
 // This one is very messy, but it is the best I can do for now (since I am running out of time :])
-
 // Basically, I create a mirror of WorkSchedule structure, so I could iterate its properties (unwrappedWorkHours method). After that, I am able to unwrap WorkHours from these properties so I could use them later on.
-
 // After that I start grouping days that have same WorkHours in a row. Algorithm is simple: I check if previous WorkHours is the same as the current one and if day number is one less than current (meaning its the previous day). This is to prevent grouping Monday and Wednesday (when Tuesday have different hours), for example, even though they have same WorkHours. For this I use 3 arrays: workDays, daysInSuccess and workHours. More detailed explanation can be found in the method itself.
-
 // Later on, we have two ready-to-go arrays (one for hours, one for days), which are displayed.
 
 import Foundation
